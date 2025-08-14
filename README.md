@@ -18,18 +18,18 @@ Desteklenen başlıca işlemler:
 
 ```mermaid
 flowchart TD
-    A[📩 Kullanıcı Promptu] --> B[🤖 Ana Agent (Supervisor)]
-    B --> C[🧭 Router (Intent Tespiti)]
-    C -->|auth_verification| D1[🔑 Auth Agent]
-    C -->|billing_query| D2[💰 Billing Agent]
-    C -->|package_query| D3[📦 Package Query Agent]
-    C -->|package_change| D4[🔄 Package Change Agent]
-    C -->|payment_process| D5[💳 Payment Agent]
-    C -->|tech_support| D6[🛠 Tech Support Agent]
-    C -->|general_conversation| D7[💬 General Agent]
+    A[User Prompt] --> B[Main Agent (Supervisor)]
+    B --> C[Router (Intent Detection)]
+    C -->|auth_verification| D1[Auth Agent]
+    C -->|billing_query| D2[Billing Agent]
+    C -->|package_query| D3[Package Query Agent]
+    C -->|package_change| D4[Package Change Agent]
+    C -->|payment_process| D5[Payment Agent]
+    C -->|tech_support| D6[Tech Support Agent]
+    C -->|general_conversation| D7[General Agent]
     D1 & D2 & D3 & D4 & D5 & D6 & D7 --> B
-    B --> E[📤 Kullanıcıya Yanıt]
-```
+    B --> E[Response to User]
+
 
 ### Mimari Özellikler
 - **Supervisor Agent** → Oturum yönetimi, intent routing, context kontrolü  
