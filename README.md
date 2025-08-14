@@ -29,7 +29,7 @@ flowchart TD
     C -->|general_conversation| D7[General Agent]
     D1 & D2 & D3 & D4 & D5 & D6 & D7 --> B
     B --> E[Response to User]
-
+```
 
 ### Mimari Özellikler
 - **Supervisor Agent** → Oturum yönetimi, intent routing, context kontrolü  
