@@ -1,4 +1,5 @@
-# 📄 Divan-ı Neural Telekom – ADK Tabanlı Multi-Agent Sistem ## 📌 1. Proje Özeti Divan-ı Neural Telekom, **ADK (Agentic Development Kit)** yapısına uygun olarak geliştirilmiş çoklu ajan (Multi-Agent) tabanlı bir müşteri hizmetleri otomasyon sistemidir. Sistem, gelen müşteri taleplerini analiz eder, uygun alt ajanlara yönlendirir ve yanıtları kullanıcıya sunar. Paket sorgulama, paket değişikliği, fatura sorgulama, ödeme ve teknik destek gibi işlemler farklı **Domain Agent**’lar tarafından yürütülür. --- ## 🏗 2. Mimari Şeması
+# 📄 Divan-ı Neural Telekom – ADK Tabanlı Multi-Agent Sistem
+## 📌 1. Proje Özeti Divan-ı Neural Telekom, **ADK (Agentic Development Kit)** yapısına uygun olarak geliştirilmiş çoklu ajan (Multi-Agent) tabanlı bir müşteri hizmetleri otomasyon sistemidir. Sistem, gelen müşteri taleplerini analiz eder, uygun alt ajanlara yönlendirir ve yanıtları kullanıcıya sunar. Paket sorgulama, paket değişikliği, fatura sorgulama, ödeme ve teknik destek gibi işlemler farklı **Domain Agent**’lar tarafından yürütülür. --- ## 🏗 2. Mimari Şeması
 mermaid
 flowchart TD
     A[📩 Kullanıcı Promptu] --> B[🤖 Ana Agent (Supervisor)]
