@@ -44,7 +44,7 @@ flowchart TD
 
 ---
 
-## 🤖 3. Kullanılan Framework ve Modeller
+## 3. Kullanılan Framework ve Modeller
 
 | Sürüm | Ana Agent Modeli | Sub-Agent Modeli |
 |-------|------------------|------------------|
@@ -59,7 +59,7 @@ flowchart TD
 
 ---
 
-## ⚙️ 4. Kurulum ve Çalıştırma
+##  4. Kurulum ve Çalıştırma
 
 ```bash
 # 1. Gerekli bağımlılıkların yüklenmesi
