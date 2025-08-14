@@ -27,8 +27,15 @@ flowchart TD
     C -->|payment_process| D5[Payment Agent]
     C -->|tech_support| D6[Tech Support Agent]
     C -->|general_conversation| D7[General Agent]
-    D1 & D2 & D3 & D4 & D5 & D6 & D7 --> B
+    D1 --> B
+    D2 --> B
+    D3 --> B
+    D4 --> B
+    D5 --> B
+    D6 --> B
+    D7 --> B
     B --> E[Response to User]
+
 ```
 
 ### Mimari Özellikler
