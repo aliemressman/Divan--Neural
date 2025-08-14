@@ -35,7 +35,6 @@ flowchart TD
     D6 --> B
     D7 --> B
     B --> E[Response to User]
-
 ```
 
 ### Mimari Özellikler
