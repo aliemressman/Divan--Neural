@@ -54,23 +54,8 @@ Ollama API tabanlı model çalıştırma
 Çoklu agent akışını yönetmek için özel yazılmış ADK (Agentic Decision & Knowledge) mimarisi
 RAG / Fine-tune: Kullanılmıyor
 
-4. Kurulum ve Çalıştırma
 
-# 1. Gerekli paketlerin yüklenmesi
-pip install -r requirements.txt
-
-# 2. Ollama servisinin başlatılması (eğer kurulu değilse kurun)
-ollama serve
-
-# 3. Gerekli modellerin indirilmesi
-ollama pull gpt-oss-20b
-ollama pull llama3-8b
-
-# 4. Notebook ortamında çalıştırma
-jupyter notebook yarismaGPTV7_adk_mimarisine_gecis_trendyol.ipynb
-
-
-5. Senaryoların Açıklaması
+4. Senaryoların Açıklaması
 
 Auth Agent → Telefon numarası doğrulama, TR format kontrolü
 Billing Agent → Fatura bilgisi, ödeme durumu, borç/bakiye sorgulama
@@ -80,7 +65,7 @@ Payment Agent → Ödeme yöntemi seçimi, işlem başlatma
 Tech Support Agent → Temel teknik destek, ticket oluşturma
 General Agent → Selamlaşma, genel yönlendirme
 
-6. Veri Setleri
+5. Veri Setleri
 
 - mock_packages_db.json
 Paket çeşitleri, fiyat, hız, veri miktarı, kategori bilgileri
@@ -104,7 +89,7 @@ Kullanıcı bilgileri, mevcut paket, bakiye, fatura durumu
   "status": "paid"
 }
 
-7. Zorluklar ve Çözümler
+6. Zorluklar ve Çözümler
 
 Zorluk: Türkçe doğal dilde farklı ifade biçimlerinin (deyimler, dolaylı anlatımlar) doğru anlaşılması
 Çözüm: Supervisor agent prompt’ları bu varyasyonları kapsayacak şekilde genişletildi.
@@ -115,24 +100,19 @@ Zorluk: Çoklu niyet içeren mesajlarda doğru yönlendirme
 Zorluk: Eksik bilgi ile işlem başlatılamaması
 Çözüm: Loop agent mekanizması ile eksik bilgiler tekrar sorulup tamamlandı.
 
-8. Ölçümleme Sonuçları
+7. Ölçümleme Sonuçları
 
 Niyet tespiti doğruluk oranı: %92
 Araç çağrısı başarı oranı: %95
 Ortalama yanıt süresi: 1.8 saniye
 Çok adımlı görev tamamlama oranı: %90
 
-9. Ölçeklenebilirlik Değerlendirmesi
+8. Ölçeklenebilirlik Değerlendirmesi
 
 Yatay Ölçekleme: Parallel workflow ile aynı anda birden fazla işlem yapabilme yeteneği
 Dikey Ölçekleme: Daha büyük modeller (ör. LLaMA 70B) kolayca entegre edilebilir
 Modüler Yapı: Domain agent’lar eklenip çıkarılabilir
 Veritabanı Uyumluluğu: Mock database yerine gerçek müşteri verileri ile kolay entegrasyon
-
-
-
-
-
 
 
 
